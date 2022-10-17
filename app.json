@@ -13,20 +13,20 @@
   "success_url": "/",
   "env": {
     "BOT_NAME": {
-        "description": "Name of your bot"
+        "description": "Unknown-bot"
     },
     "PREFIX": {
-      "description": "Prefix of your bot"
+      "description": "?"
     },
     "SESSION": {
-      "description": "A string for the session to be classified and to get access to the server endpoints"
+      "description": "HM"
     },
     "MODS": {
-      "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+      "description": "27729378630"
       "required": false
     },
     "MONGO_URI": {
-      "description": "A secret String for Mongodb Connection.(Required)"
+      "description": "mongodb+srv://unknownbots:unknownbots@nobody.7u9lamj.mongodb.net/?retryWrites=true&w=majority"
     }
   },
   "buildpacks": [
