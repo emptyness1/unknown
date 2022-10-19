@@ -18,7 +18,7 @@ export default class extends BaseCommand {
             })).filter((command) => command.data.config.category !== 'dev')
             const { nsfw } = await this.client.DB.getGroup(M.from)
             if (!nsfw) commands = commands.filter(({ data }) => data.config.category !== 'nsfw')
-            const buffer = await this.client.utils.getbuffer('https://telegra.ph/file/f70a26bf1ce99ec4fb8ba.mp4')
+            const buffer = await this.client.utils.getBuffer('https://telegra.ph/file/f70a26bf1ce99ec4fb8ba.mp4')
             let text = `👋🏻 (💙ω💙) Konnichiwa! *@${M.sender.jid.split('@')[0]}*, I'm ${
                 this.client.config.name
             }\nMy prefix is - "${this.client.config.prefix}"\n\nThe usable commands are listed below.`
