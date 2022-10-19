@@ -35,7 +35,7 @@ export default class extends BaseCommand {
                 text += `\`\`\`${categoryCommands.join(', ')}\`\`\``
             }
             text += `\n\n📕 *Note:* Use ${this.client.config.prefix}help <command_name> for more info of a specific command. Example: *${this.client.config.prefix}help hello*`
-            return void (await M.reply(text, 'text', undefined, undefined, undefined, [M.sender.jid]))
+            return void (await M.reply(buffer, 'video', true, undefined, text, [M.sender.jid]))
         } else {
             const cmd = context.trim().toLowerCase()
             const command = this.handler.commands.get(cmd) || this.handler.aliases.get(cmd)
